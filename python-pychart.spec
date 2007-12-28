@@ -4,12 +4,12 @@
 Summary:	PyChart - Python library for creating high quality EPS, PDF, PNG, or SVG charts
 Summary(pl.UTF-8):	PyChart - biblioteka Pythona do tworzenia wysokiej jakości wykresów EPS, PDF, PNG i SVG
 Name:		python-%{module}
-Version:	1.26.1
-Release:	0.1
+Version:	1.39
+Release:	1
 License:	GPL
 Group:		Development/Languages/Python
-Source0:	http://home.gna.org/pychart/old/%{fname}-%{version}.tar.gz
-# Source0-md5:	4a1299542c24ab22852353b97c94265e
+Source0:	http://download.gna.org/pychart/%{fname}-%{version}.tar.gz
+# Source0-md5:	f1f509a1c4623056c8e780bb7c9a05c5
 URL:		http://home.gna.org/pychart/
 BuildRequires:	python >= 1.5
 %pyrequires_eq	python-libs
@@ -52,3 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %{py_sitescriptdir}/%{module}
+%{py_sitescriptdir}/*.egg*
