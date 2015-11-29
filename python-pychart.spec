@@ -11,6 +11,7 @@ Group:		Development/Languages/Python
 Source0:	http://download.gna.org/pychart/%{fname}-%{version}.tar.gz
 # Source0-md5:	f1f509a1c4623056c8e780bb7c9a05c5
 URL:		http://home.gna.org/pychart/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 1.5
 %pyrequires_eq	python-libs
 BuildArch:	noarch
